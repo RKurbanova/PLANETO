@@ -1,0 +1,39 @@
+/*Header*/
+
+.header {
+	display: flex; 
+	justify-content: center;
+	height: 97px;
+	width: 100%;
+	background-color: #04C78B;
+}
+
+.header-nav {
+	display: flex;
+	align-items: center;
+}
+
+.header-nav__link-text {
+	margin: 0;
+}
+
+.header-nav__link {
+	position: relative;
+}
+
+.header-nav__link:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #FFF;
+	transition: width 0.3s ease-out;
+}
+
+.header-nav__link:hover:after,
+.header-nav__link:focus:after {
+	width: 100%;
+}
+
+
